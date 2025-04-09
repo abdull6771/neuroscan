@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - NeuroScan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .header-bg {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="header-bg text-white py-4 px-6 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">NeuroScan</h1>
+            <nav class="space-x-6">
+                <a href="/" class="text-indigo-200 font-semibold">Home</a>
+                <a href="/about" class="hover:text-indigo-200 transition-colors">About</a>
+                <a href="/contact" class="hover:text-indigo-200 transition-colors">Contact</a>
+                <a href="/tech_insights" class="hover:text-indigo-200 transition-colors">Tech & Insights</a>
+                <a href="/demo_dashboard" class="hover:text-indigo-200 transition-colors">Demo Dashboard</a>
+                <a href="/about_dataset" class="hover:text-indigo-200 transition-colors">About Dataset</a>
+                <a href="/about_ceo" class="hover:text-indigo-200 transition-colors">About the CEO</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-xl p-6">
+            <h2 class="text-3xl font-bold text-indigo-800 mb-6">About NeuroScan</h2>
+            <p class="text-gray-600 mb-4">
+                NeuroScan is a cutting-edge platform designed to assist medical professionals in the early detection of brain tumors using advanced deep learning technology. Our mission is to enhance diagnostic accuracy and improve patient outcomes through innovative AI solutions.
+            </p>
+            <p class="text-gray-600 mb-4">
+                Developed by a team of AI researchers and healthcare experts, NeuroScan leverages a state-of-the-art TensorFlow Lite model trained on extensive MRI datasets. Our tool provides rapid, reliable classifications with confidence scores, making it an invaluable asset in clinical settings.
+            </p>
+            <div class="mt-6">
+                <img src="{{ url_for('static', filename='test.png') }}" alt="Medical Team" class="rounded-lg w-full h-64 object-cover">
+                <p class="text-sm text-gray-500 mt-2 text-center">Our team is dedicated to advancing medical diagnostics.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>© 2025 NeuroScan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

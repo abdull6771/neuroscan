@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the CEO - NeuroScan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .header-bg {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+        .profile-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="header-bg text-white py-4 px-6 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">NeuroScan</h1>
+            <nav class="space-x-6">
+                <a href="/" class="hover:text-indigo-200 transition-colors">Home</a>
+                <a href="/about" class="hover:text-indigo-200 transition-colors">About</a>
+                <a href="/contact" class="hover:text-indigo-200 transition-colors">Contact</a>
+                <a href="/tech_insights" class="hover:text-indigo-200 transition-colors">Tech & Insights</a>
+                <a href="/demo_dashboard" class="hover:text-indigo-200 transition-colors">Demo Dashboard</a>
+                <a href="/about_dataset" class="hover:text-indigo-200 transition-colors">About Dataset</a>
+                <a href="/about_ceo" class="text-indigo-200 font-semibold">About the CEO</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-xl p-6">
+            <h2 class="text-3xl font-bold text-indigo-800 mb-6">Meet Our CEO</h2>
+            
+            <!-- Profile Section -->
+            <div class="profile-card rounded-lg p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+                <img src="{{ url_for('static', filename='ceo.jpeg') }}" alt="Abdullahi Ahmad" class="w-48 h-48 rounded-full object-cover shadow-md">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-semibold text-gray-800">Abdullahi Ahmad</h3>
+                    <p class="text-indigo-600 font-medium mb-4">CEO & Founder, NeuroScan</p>
+                    <p class="text-gray-600">
+                        Abdullahi Ahmad is an innovative Computer Engineer and AI researcher from Babura, Jigawa, Nigeria, with over four years of experience in Machine Learning and Generative AI. He holds a Bachelor of Engineering (B.Eng.) in Computer Engineering from Ahmadu Bello University, Zaria, graduating with Second Class Upper honors, complemented by a Diploma in Computer Engineering from the same institution.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Biography Section -->
+            <section class="mt-8">
+                <h4 class="text-xl font-semibold text-gray-700 mb-4">Professional Journey</h4>
+                <p class="text-gray-600 mb-4">
+                    Driven by a passion for artificial intelligence, Abdullahi specializes in Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), and workflow automation using tools like LangChain and LangGraph. His groundbreaking work earned him the Grand Prize at the Global Huawei ICT Competition (Innovation/AI Track) in 2023, recognizing his exceptional technical prowess and creativity.
+                </p>
+                <p class="text-gray-600 mb-4">
+                    As a Machine Learning Engineer Intern at Nafabat.AI, Abdullahi contributed to impactful projects, including fine-tuning LlamaVID for real-time shoplifting detection and developing end-to-end RAG applications. His academic research culminated in a smart waste robot using AI for waste classification and robotic disposal, presented as a poster at Ahmadu Bello University.
+                </p>
+                <p class="text-gray-600 mb-4">
+                    A sought-after speaker, Abdullahi has presented at national platforms like the Nigeria Computer Society AI Summit, showcasing assistive AI technologies for the visually impaired. He also mentors students and organizes workshops on AI and robotics to empower his community.
+                </p>
+            </section>
+
+            <!-- Achievements & Skills -->
+            <section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-4">Certifications & Affiliations</h4>
+                    <ul class="text-gray-600 list-disc list-inside">
+                        <li>Huawei ICT Professional in AI and Cloud</li>
+                        <li>Coursera-certified TensorFlow Developer</li>
+                        <li>Member, Nigerian Computer Society (NCS)</li>
+                        <li>Member, Data Science Nigeria</li>
+                        <li>Member, Nigerian Society of Engineers (NSE)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-4">Technical Expertise</h4>
+                    <ul class="text-gray-600 list-disc list-inside">
+                        <li>Python, PyTorch, TensorFlow, ROS</li>
+                        <li>Cloud Platforms: AWS, Azure, GCP</li>
+                        <li>ML & Big Data Tools</li>
+                        <li>Notable Projects: SmartWaste, CompengChat, Brain Tumor Classification</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Personal Note -->
+            <section class="mt-8">
+                <h4 class="text-xl font-semibold text-gray-700 mb-4">Beyond the Code</h4>
+                <p class="text-gray-600">
+                    When not advancing AI innovation, Abdullahi enjoys watching anime, playing football, and engaging in discussions about the future of artificial intelligence, reflecting his multifaceted personality and curiosity.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>© 2025 NeuroScan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

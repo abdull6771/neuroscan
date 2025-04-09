@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NeuroScan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .header-bg {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="header-bg text-white py-4 px-6 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">NeuroScan</h1>
+            <nav class="space-x-6">
+                <a href="/" class="text-indigo-200 font-semibold">Home</a>
+                <a href="/about" class="hover:text-indigo-200 transition-colors">About</a>
+                <a href="/contact" class="hover:text-indigo-200 transition-colors">Contact</a>
+                <a href="/tech_insights" class="hover:text-indigo-200 transition-colors">Tech & Insights</a>
+                <a href="/demo_dashboard" class="hover:text-indigo-200 transition-colors">Demo Dashboard</a>
+                <a href="/about_dataset" class="hover:text-indigo-200 transition-colors">About Dataset</a>
+                <a href="/about_ceo" class="hover:text-indigo-200 transition-colors">About the CEO</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-xl p-6">
+            <h2 class="text-3xl font-bold text-indigo-800 mb-6">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-4">Get in Touch</h3>
+                    <p class="text-gray-600 mb-2"><strong>Email:</strong> babura@neuroscan.ai</p>
+                    <p class="text-gray-600 mb-2"><strong>Phone:</strong> +2348067718392</p>
+                    <p class="text-gray-600"><strong>Address:</strong> 123 Kofar Fada, Babura Jigawa State Nigeria</p>
+                </div>
+                <!-- Contact Form Placeholder -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-4">Send a Message</h3>
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                        <input type="email" placeholder="Your Email" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                        <textarea placeholder="Your Message" rows="4" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"></textarea>
+                        <button class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-2 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all">Send Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Contact Us" class="rounded-lg w-full h-64 object-cover">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>© 2025 NeuroScan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
