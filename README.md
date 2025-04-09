@@ -1,6 +1,6 @@
 # NeuroScan: AI-Powered Brain Tumor Classification
 
-![NeuroScan Banner](https://via.placeholder.com/800x200.png?text=NeuroScan+-+Brain+Tumor+Classification)  
+![NeuroScan Banner](static/test.png) 
 *AI-driven brain tumor detection using MRI scans.*
 
 ## Overview
